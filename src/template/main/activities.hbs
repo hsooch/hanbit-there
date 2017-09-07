@@ -1,0 +1,20 @@
+<li style="background-image: url({{img}})">
+    <div class="dark-layer">
+        {{#if rank}}
+            <div class="ht-item-best">{{rank}}</div>
+        {{/if}}
+        <div class="ht-item-text">
+            {{#if quick}}
+                <div class="ht-item-quick">
+                    <i class="glyphicon glyphicon-flash"></i>
+                    바로예약
+                </div>
+            {{/if}}
+            <div class="ht-item-title">{{name}}</div>
+            <div class="ht-item-from">from</div>
+            <div class="ht-item-price">
+                ￦{{format price}} <span class="ht-item-org-price">{{format orgPrice}}</span>
+            </div>
+        </div>
+    </div>
+</li>

@@ -1,0 +1,32 @@
+<li>
+    <div class="ht-activity-img"
+         style="background-image: url({{img}})">
+    </div>
+    <div class="ht-activity-contents">
+        <div class="ht-activity-text">
+            <div class="ht-activity-title">
+                {{~name~}}
+            </div>
+            <div class="ht-activity-summary">
+                {{~summary~}}
+            </div>
+            <div class="ht-activity-prices">
+                <div class="ht-activity-from">
+                    from
+                </div>
+                <div class="ht-activity-price">
+                    ￦{{~format price}} <span class="ht-activity-org-price">{{format orgPrice}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="ht-activity-badge">
+        {{~#if badges~}}
+            {{~#each badges~}}
+                <li class="ht-badge-{{this}}">{{upper this}}</li>
+            {{~/each~}}
+        {{^}}{{! ^ = else 임}}
+            <li class="ht-badge-none">NONE</li>
+        {{~/if~}}
+    </ul>
+</li>

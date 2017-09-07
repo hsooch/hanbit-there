@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{> ../../template/admin/menu group-there="true" there-group="true"}}
+<div class="admin-contents">
+    <div class="hta-title">지역 그룹 관리</div>
+    <table class="table hta-there-groups">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>지역그룹ID</th>
+                <th>지역그룹명</th>
+                <th>지역수</th>
+                <th>순서</th>
+                <th>수정일시</th>
+            </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <td colspan="3">총 지역그룹 수 :
+                <span class="hta-total-there-groups"></span>
+            </td>
+            <td colspan="3">총 지역 수 :
+                <span class="hta-total-theres"></span>
+            </td>
+        </tr>
+        </tfoot>
+        <tbody>
+            <!-- there-groups -->
+        </tbody>
+    </table>
+    <div class="hta-buttons">
+        <button class="hta-there-group-add btn btn-primary">지역그룹추가</button>
+    </div>
+</div>
+</body>
+</html>

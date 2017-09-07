@@ -1,0 +1,36 @@
+.ht-carousel {
+  position: relative;
+}
+
+.ht-carousel-visible {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ht-carousel-visible > li {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.ht-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.ht-carousel-arrow.left {
+  left: 20px;
+}
+
+.ht-carousel-arrow.right {
+  right: 20px;
+}

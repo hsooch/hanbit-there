@@ -1,0 +1,479 @@
+@font-color: #333; // less 파일은 css 에 변수를 쓸 수 있다
+@main-color: #b666ff;
+@body-min-width: 1000px;
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-width: @body-min-width;
+  min-height: 100%;
+  padding-top: @header-height;
+  color: @font-color;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dark-layer { // 배경 흐리게 표현하는 레이어
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-layer {
+  z-index: 2000;
+}
+
+.ht-member-layer {
+  position: fixed;
+  top: 0px;
+  right: -333px;
+  width: 333px;
+  height: 100%;
+  background-color: #ebebeb;
+  z-index: 5000;
+  overflow: auto;
+}
+
+.ht-member-form {
+  padding: 40px 30px 0px 30px;
+}
+
+.ht-member-info {
+  background-color: #fff;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  color: #999;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.ht-member-logo {
+  text-align: center;
+}
+
+.ht-member-logo > div {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: @main-color;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  line-height: 40px;
+}
+
+.ht-member-form-group {
+  position: relative;
+  margin-top: 15px;
+}
+
+.ht-member-form-group > input {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  border: solid 1px #888;
+}
+
+.ht-member-form-group > input:active,
+.ht-member-form-group > input:focus {
+  outline: none;
+  border-color: @main-color;
+}
+
+.ht-member-form-group > i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: #999;
+}
+
+.ht-member-form-group input[type=checkbox] {
+  margin-top: 3px;
+}
+
+.ht-member-form-group .ht-link {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: @main-color;
+}
+
+.ht-member-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  background-color: @main-color;
+  color: #fff;
+  border: 0;
+  outline: none;
+}
+
+.ht-member-btn:hover {
+  opacity: 0.7;
+}
+
+.ht-member-text-sm {
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.ht-member-sns {
+  text-align: center;
+}
+
+.ht-member-sns > li {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin: 0px 10px;
+  border: solid 1px #333;
+  color: #555;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+.ht-member-text {
+  padding: 20px 0px 20px 0px;
+  color: #999;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ht-signed-in {
+  padding: 80px 0px;
+  text-align: center;
+  color: #333;
+
+  .ht-member-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #47cbad;
+    color: #3eaa8c;
+    border-radius: 30px;
+    font-size: 60px;
+    overflow: hidden;
+  }
+}
+
+.ht-right-menu {
+  padding: 20px;
+}
+
+.ht-right-menu-list > li {
+  padding: 20px;
+  color: #555;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ht-right-menu-list > li:hover {
+  color: #539fa3;
+}
+
+.ht-highlight {
+  color: @main-color;
+}
+
+.ht-link {
+  color: #333;
+  cursor: pointer;
+}
+
+.ht-link:hover {
+  color: @main-color;
+}
+
+.ht-sign-up {
+  display: none;
+}
+
+@header-height: 64px;
+
+header {
+  position: fixed; // 스크롤 해도 그자리에
+  top: 0px;
+  left: 0px;
+  min-width: @body-min-width; // 창 크기 줄여도 글씨 위치 그대로
+  width: 100%;
+  height: @header-height;
+  border-bottom: solid 1px #ddd;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.header-logo {
+  display: inline-block;
+  height: 100%;
+  padding: 0px 15px;
+  color: @main-color;
+  font-size: 23px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  line-height: @header-height;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.header-menu {
+  display: inline-block;
+  padding-left: 20px;
+  vertical-align: top;
+}
+
+.header-menu > li {
+  position: relative;
+  display: inline-block;
+  color: #999;
+  font-weight: bold;
+  line-height: @header-height;
+}
+
+.header-menu-text {
+  padding: 0px 40px;
+  cursor: pointer;
+}
+
+.header-menu-text:hover {
+  color: @main-color;
+}
+
+.header-search {
+  position: relative;
+  display: inline-block;
+  margin-top: 17px;
+}
+
+.ht-search-header {
+  width: 230px;
+  padding: 5px 30px 5px 5px;
+  border: solid 1px #555;
+  border-radius: 4px;
+  outline: none;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.header-search > i {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.header-btn-member {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 0px 15px;
+  color: @main-color;
+  font-size: 21px;
+  line-height: @header-height;
+  cursor: pointer;
+}
+
+.header-btn-member:hover {
+  opacity: 0.5;
+}
+
+@header-sub-menu-width: 130px;
+
+.header-sub-menu { // 마우스 오버 팝업 리스트
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0px;
+  width: calc(@header-sub-menu-width * 5);
+  border: solid 1px #ddd;
+  border-top: 0;
+  box-shadow: 22px 22px 22px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+.header-sub-menu > li {
+  display: inline-block;
+  width: @header-sub-menu-width;
+  padding: 15px;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.ht-section-contents {
+  position: relative;
+  width: 970px;
+  margin: 0px auto; // 양옆이 창 크기에 따라 자동으로 맞춰짐
+}
+
+.header-sub-menu > li:hover {
+  color: @main-color;
+}
+
+@footer-bg-color: #2d2e2e;
+@footer-fg-color: #666;
+@footer-fg-color-highlight: #999;
+
+footer {
+  padding: 120px 10px 150px 10px;
+  background-color: @footer-bg-color;
+  color: @footer-fg-color;
+  text-align: center;
+}
+
+.footer-sns > li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0px 15px;
+  border-radius: 25px;
+  background-color: @footer-fg-color;
+  color: @footer-bg-color;
+  font-size: 30px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.footer-sns > li:hover {
+  background-color: @footer-fg-color-highlight;
+}
+
+.footer-menu {
+  padding: 30px 10px;
+}
+
+.footer-menu > li {
+  display: inline-block;
+  margin: 0px 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-menu > li:hover {
+  color: @footer-fg-color-highlight;
+}
+
+.footer-info {
+  font-size: 11px;
+}
+
+.ht-option-control {
+  position: relative;
+}
+
+.ht-option-control > label {
+  font-size: 11px;
+}
+
+.ht-option-selectbox {
+  position: relative;
+  margin: 5px 0px;
+  padding: 8px 24px 8px 8px;
+  border: solid 1px #ddd;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ht-option-selectbox .ht-option-caret {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.ht-options {
+  position: absolute;
+  display: none;
+  top: 100% + 3px;
+  left: 0px;
+  width: 100%;
+  border: solid 1px #ddd;
+  background-color: #fff;
+  z-index: 2000;
+}
+
+.ht-options > li {
+  padding: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.ht-options > li:hover {
+  background-color: #eee;
+}
+
+.ht-price-control {
+  position: relative;
+}
+
+.ht-price-control > label {
+  font-size: 11px;
+}
+
+.ht-price-box {
+  position: relative;
+  margin: 5px 0px;
+  padding: 8px 60px 8px 8px;
+  border: solid 1px #ddd;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.ht-price-btns {
+  position: absolute;
+  top: 8px;
+  right: 0px;
+}
+
+.ht-price-btns > li {
+  display: inline-block;
+  padding: 0px 8px;
+  border-right: solid 1px #ddd;
+  color: #bbb;
+}
+
+.ht-price-btns > li:last-child {
+  border-right: 0;
+}
+
+.ht-price-box:not(.disabled) {
+  span {
+    color: @main-color;
+    font-weight: bold;
+  }
+
+  .ht-price-btns > li {
+    cursor: pointer;
+  }
+
+  .ht-price-btns > li:hover {
+    color: @main-color;
+  }
+}
+
+.ht-price-box.disabled {
+  color: #ddd;
+}
+
+
+
+

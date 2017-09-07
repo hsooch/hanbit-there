@@ -1,0 +1,86 @@
+@import 'common.less';
+
+.hta-activity-search-form {
+  position: relative;
+}
+
+.hta-activity-search-form > div {
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+#hta-there-group-select > button {
+  display: inline-block;
+  min-width: 100px;
+}
+
+#hta-there-select > button {
+  display: inline-block;
+  min-width: 150px;
+}
+
+#hta-there-select .dropdown-menu {
+  max-height: 300px;
+  overflow: auto;
+}
+
+#hta-activity-search {
+  display: inline-table;
+  max-width: 300px;
+}
+
+.hta-add-activity {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.hta-activity-list {
+  margin-top: 20px;
+}
+
+@hta-activity-card-height: 80px;
+
+.hta-activity-list > li {
+  display: inline-block;
+  width: 300px;
+  height: @hta-activity-card-height;
+  margin: 0px 15px 15px 0px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.hta-activity-img {
+  display: inline-block;
+  width: @hta-activity-card-height;
+  height: @hta-activity-card-height;
+  background-size: cover;
+  background-position: 50% 50%;
+  vertical-align: top;
+}
+
+.hta-activity-text {
+  display: inline-block;
+  width: calc(~'100% - '  @hta-activity-card-height + 5px);
+  padding: 5px;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.hta-activity-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hta-activity-intro {
+  display: -webkit-box;
+  height: 51px;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

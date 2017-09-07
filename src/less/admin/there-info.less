@@ -1,0 +1,113 @@
+@import 'common';
+
+@hta-there-card-height: 80px;
+
+.hta-there-form {
+  position: relative;
+}
+
+.hta-there-form > div {
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+#hta-there-group-select > button {
+  display: inline-block;
+  min-width: 100px;
+}
+
+#hta-there-search {
+  display: inline-table;
+  max-width: 300px;
+}
+
+.hta-add-there {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hta-there-list {
+  margin-top: 20px;
+}
+
+.hta-there-list > li {
+  display: inline-block;
+  width: 300px;
+  height: @hta-there-card-height;
+  margin: 0px 15px 15px 0px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.hta-there-img {
+  display: inline-block;
+  width: @hta-there-card-height;
+  height: @hta-there-card-height;
+  background-size: cover;
+  background-position: 50% 50%;
+  vertical-align: top;
+}
+
+// shift 엔터 - 바로 밑줄로
+// ctrl alt 엔터 - 윗줄로
+
+.hta-there-text {
+  display: inline-block;
+  width: calc(~'100% -' @hta-there-card-height + 5px);  // ~ 를 쓰면 계산을 바로 하지 않고 css 로 넘김
+  padding: 5px;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.hta-there-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  white-space: nowrap;  // 넘쳐도 다음줄로 넘어가지 않게함
+  overflow: hidden;
+  text-overflow: ellipsis;  // ...
+}
+
+.hta-there-summary {
+  display: -webkit-box;   //블록을 수직, 수평으로 배치하거나 역순으로 배열하거나 임의로 배치 순서를 바꿔줄 수도 있음
+  height: 34px;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;    // 라인 수
+  -webkit-box-orient: vertical; // 박스를 수직방향으로 배치
+}
+
+.hta-there-properties {
+  color: #555;
+  text-align: right;
+}
+
+.hta-there-properties > li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

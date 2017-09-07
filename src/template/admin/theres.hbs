@@ -1,0 +1,22 @@
+{{~#each this~}}
+    {{~#unless hidden~}}
+        <li there-id="{{id}}">
+            <div class="hta-there-img"
+                 style="background-image: url({{background}})"></div>
+            <div class="hta-there-text">
+                <div class="hta-there-title">{{name}}({{id}})</div>
+                <div class="hta-there-summary">{{{summary}}}</div>
+                <ul class="hta-there-properties">
+                    <li>
+                        <i class="fa fa-globe"></i>
+                        {{~infoCount~}}
+                    </li>
+                    <li>
+                        <i class="fa fa-car"></i>
+                        {{~trafficCount~}}
+                    </li>
+                </ul>
+            </div>
+        </li>
+    {{~/unless~}}
+{{~/each~}}

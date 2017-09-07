@@ -1,0 +1,274 @@
+@import 'common.less';
+@import 'ht-tab.less';
+@import 'ht-carousel.less';
+@import 'ht-activity.less';
+
+.ht-section-activity {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: #fff;
+  text-align: center;
+}
+
+.ht-activity-name {
+  margin-top: 150px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.ht-activity-in {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.ht-section-info {
+  padding: 50px 0px;
+  background-color: #edeef2;
+}
+
+@activity-booking-width: 270px;
+
+.ht-activity-info {
+  padding-right: @activity-booking-width + 15px;
+}
+
+.ht-activity-info-tab .ht-tab-contents {
+  height: 500px;
+}
+
+.ht-activity-info-tab .ht-tab-contents > li {
+  height: 100%;
+}
+
+.ht-activity-photos {
+  height: 100%;
+}
+
+.ht-activity-video-ready {
+  padding-top: 220px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#ht-activity-map {
+  height: 100%;
+}
+
+.ht-activity-info-text {
+  margin-bottom: 40px;
+  padding: 60px 30px;
+  background-color: #fff;
+  font-size: 13px;
+  line-height: 200%;
+}
+
+.ht-activity-info-title {
+  margin-bottom: 20px;
+  color: @main-color;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ht-activity-intro-text {
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.ht-activity-info-list {
+  padding: 30px 0px;
+  border-top: solid 1px #bbb;
+}
+
+.ht-activity-info-list .type-icon > li {
+  position: relative;
+  padding: 20px 0px 20px 22px;
+  border-bottom: solid 1px #ddd;
+}
+
+.ht-activity-info-list .type-icon > li:last-child {
+  border: 0;
+}
+
+.ht-activity-info-list .type-icon > li .fa {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font-size: 14px;
+}
+
+.ht-activity-info-list-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ht-activity-info-list .type-dot {
+  list-style: disc;
+  padding-left: 22px;
+}
+
+.ht-activity-info-list .type-dot > li {
+  margin: 10px 0px;
+}
+
+.ht-activity-review-tab .ht-tab-btns > li {
+  min-width: 140px;
+  text-align: center;
+}
+
+.ht-activity-review-tab .ht-tab-contents > li {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.ht-section-activities {
+  padding: 20px 0px;
+  background-color: #edeef2;
+}
+
+.ht-activities-title {
+  padding: 30px 0px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ht-activity-booking {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: @activity-booking-width;
+}
+
+.ht-booking-header {
+  display: inline-block;
+  padding: 12px 20px;
+  color: #fff;
+  background-color: #47cbad;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ht-booking-body {
+  padding: 20px 15px;
+  border-top: solid 1px #3eaa8c;
+  background-color: #fff;
+}
+
+.ht-booking-calendar {
+  border: solid 1px #ddd;
+}
+
+.ht-booking-calendar-title {
+  position: relative;
+  padding: 10px;
+  border-bottom: solid 1px #ddd;
+  font-weight: bold;
+}
+
+.ht-booking-calendar-title .fa {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+}
+
+.ht-booking-calendar-datepicker {
+  padding: 10px;
+}
+
+#ht-datepicker .day:not(.disabled) {
+  background-color: rgba(72, 194, 179, 0.2);
+}
+
+#ht-datepicker .day:not(.disabled):hover {
+  color: #fff;
+  background-color: @main-color;
+}
+
+#ht-datepicker .day.active {
+  color: #fff;
+  background-color: @main-color;
+}
+
+#ht-datepicker table, #ht-datepicker th, #ht-datepicker td {
+  border: solid 2px #fff;
+}
+
+.ht-booking-options {
+  padding: 20px 0px;
+}
+
+.ht-booking-datepick-msg {
+  color: #888;
+  font-size: 11px;
+}
+
+.ht-booking-options-box {
+  display: none;
+}
+
+.ht-booking-price-title {
+  padding: 15px 0px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 300%;
+  border-bottom: solid 1px #aaa;
+}
+
+.ht-booking-price-total {
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 400%;
+  border-bottom: solid 1px #ddd;
+
+  .total {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: @main-color;
+    font-size: 24px;
+    font-weight: normal;
+  }
+}
+
+.ht-booking-price-point {
+  position: relative;
+  padding: 15px 0px;
+  font-size: 13px;
+  font-weight: bold;
+
+  .point {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+  }
+}
+
+.ht-booking-price-point span {
+  color: #999;
+  font-size: 11px;
+}
+
+.ht-booking-btn {
+  display: inline-block;
+  width: 50%;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ht-booking-carrier {
+  background-color: #c995f8;
+}
+
+.ht-booking-now {
+  background-color: #b685e2;
+}
+
+

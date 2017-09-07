@@ -1,0 +1,395 @@
+@import 'common.less';
+
+.ht-section-main {
+  position: relative;
+  height: 500px;
+  background: url(../img/section-main.jpg) no-repeat 50% 100%;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+}
+
+.ht-main-text {
+  margin-top: 150px;
+  font-size: 45px;
+  letter-spacing: -2px;
+}
+
+.ht-sub-text {
+  padding: 20px 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ht-search-box {
+  position: relative;
+  display: inline-block;
+}
+
+.ht-search-main {
+  width: 650px;
+  padding: 20px 60px 20px 20px;
+  color: #666;
+}
+
+.ht-search-icon {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  color: @main-color;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.ht-download-app {
+  margin-top: 30px;
+}
+
+.ht-download-app > li {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  margin: 0px 10px;
+  padding: 0px 20px;
+  border-radius: 25px;
+  background-color: #fff;
+  color: @font-color;
+  vertical-align: top;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.ht-download-app > li > .fa-apple {
+  font-size: 30px;
+}
+
+.ht-download-app > li > * {
+  vertical-align: middle;
+}
+
+.ht-download-app > li > span {
+  color: #666;
+}
+
+.play-logo {
+  height: 30px;
+}
+
+.ht-download-app > li:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.ht-characters {
+  text-align: center;
+}
+
+.ht-characters > li {
+  display: inline-block;
+  margin: 30px;
+  text-align: left;
+}
+
+.ht-character-no {
+  display: inline-block;
+  color: @main-color;
+  font-size: 18px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.ht-character {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.ht-section-character {
+  border-bottom: solid 1px #ddd;
+}
+
+.ht-section-title {
+  padding: 50px 0px 25px 0px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ht-hot-area {
+  height: 600px;
+}
+
+.ht-hot-area > li {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 30px;
+  line-height: 130%; // 행간
+  letter-spacing: -4px; // 자간
+  cursor: pointer;
+}
+
+.ht-hot-area > li > .dark-layer {
+  padding: 20px;
+}
+
+.ht-hot-area > li > .dark-layer:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@section-item-border: solid 5px #fff;
+
+.ht-hot-area > li:first-child {
+  border-right: @section-item-border;
+  height: 100%;
+}
+
+.ht-hot-area > li:nth-child(2) {
+  border-bottom: @section-item-border;
+}
+
+.ht-hot-activity {
+  margin-top: 5px;
+}
+
+.ht-hot-activity > li {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.ht-hot-activity > li > .dark-layer:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ht-section-items > li {
+  display: inline-block;
+  width: calc(100% / 3); // 3등분 계산
+  border-right: @section-item-border;
+}
+
+.ht-section-items > li:nth-child(3n) { // 3배수째인 애들
+  border-right: 0;
+}
+
+.ht-item-text {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: #fff;
+}
+
+.ht-item-quick {
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.ht-item-quick .glyphicon {
+  width: 20px;
+  height: 20px;
+  background-color: @main-color;
+  text-align: center; // 좌우정렬
+  line-height: 20px; // 상하정렬
+}
+
+.ht-item-title {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.ht-item-from {
+  color: #ccc;
+}
+
+.ht-item-price {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.ht-item-org-price {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.ht-best-activity > li {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.ht-best-activity > li > .dark-layer:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ht-item-best {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  background-color: #ff5552;
+  opacity: 0.8;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+}
+
+.ht-view-all {
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  //margin-top: -40px;  // 마진이 - 면 상단으로 붙음
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ht-view-all:hover {
+  color: @main-color;
+}
+
+.ht-travel > li {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ht-travel-header {
+  margin-top: 20px;
+}
+
+.ht-travel-title {
+  margin-top: 110px;
+  font-size: 25px;
+  letter-spacing: -2px;
+}
+
+.ht-traver-editor {
+  margin-top: 40px;
+  font-size: 13px;
+}
+
+.ht-travel > li > .dark-layer {
+  transition: all .5s;
+
+  .ht-travel-sub-title {
+    height: 0px;
+    margin-top: 0px;
+    opacity: 0;
+    transition: all .5s;
+  }
+}
+
+.ht-travel > li > .dark-layer:hover {
+  background-color: rgba(83, 159, 163, 0.7);
+
+  .ht-travel-sub-title {
+    height: 30px;
+    margin-top: 20px;
+    opacity: .8;
+  }
+}
+
+.ht-section-travel, .ht-section-review {
+  padding-bottom: 50px;
+}
+
+.ht-section-review {
+  background-color: #ebebeb;
+}
+
+.ht-review > li {
+  position: relative;
+  height: 400px;
+  margin-top: 20px;
+  border-right-color: #ebebeb;
+  text-align: center;
+  vertical-align: top;
+}
+
+.ht-review > li:first-child {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+
+  .ht-review-title {
+    margin-top: 130px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+
+  .ht-review-sub-title {
+    margin-top: 50px;
+    letter-spacing: -1px;
+  }
+}
+
+.ht-review > li:nth-child(n+2) { // 2번째 부터(n은 0부터)
+  background-color: #fff;
+  cursor: pointer;
+
+  .dark-layer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .ht-review-img {
+    position: relative;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ht-review-title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+
+  .ht-review-sub-title, .ht-review-editor {
+    margin-top: 20px;
+    letter-spacing: -1px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+.ht-review > li:nth-child(n+2):hover {
+  .dark-layer {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

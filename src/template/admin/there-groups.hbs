@@ -1,0 +1,13 @@
+{{#each this~}}{{!이거 자체가 리스트니까 this}}
+    <tr group-id="{{id}}">
+        <td>{{sum @index 1}}</td>{{!@index=자동으로인덱스들어감근데0부터임}}
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{thereCount}}</td>
+        <td>
+            <button dir="up" class="hta-there-group-order btn btn-xs">위로</button>
+            <button dir="down" class="hta-there-group-order btn btn-xs">아래로</button>
+        </td>
+        <td>{{formatDt updateDt null "YYYY.MM.DD hh:mm:ss"}}</td>
+    </tr>
+{{~/each}}

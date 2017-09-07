@@ -1,0 +1,44 @@
+<div class="admin-menu">
+    <div class="hta-logo">HT Admin</div>
+    <nav class="hta-menu-list">
+        <div class="hta-menu-group{{#if group-there}}
+            active
+        {{/if}}">
+            <div class="hta-menu">지역관리</div>
+            <ul class="hta-sub-menu">
+                <li link="there-group"{{#if there-group}}
+                    class="active"
+                {{/if}}>지역그룹관리</li>
+                <li link="there-info"{{#if there-info}}
+                    class="active"
+                {{/if}}>지역정보관리</li>
+            </ul>
+        </div>
+        <div class="hta-menu-group{{#if group-activity}}
+            active
+        {{/if}}">
+            <div class="hta-menu">액티비티관리</div>
+            <ul class="hta-sub-menu">
+                <li link="activity"{{#if activity}}
+                    class="active"
+                {{/if}}>액티비티관리</li>
+            </ul>
+        </div>
+        <div class="hta-menu-group{{#if group-member}}
+            active
+        {{/if}}">
+            <div class="hta-menu">회원관리</div>
+            <ul class="hta-sub-menu">
+                <li>회원관리</li>
+            </ul>
+        </div>
+        <div class="hta-menu-group{{#if group-reserve}}
+            active
+        {{/if}}">
+            <div class="hta-menu">예약관리</div>
+            <ul class="hta-sub-menu">
+                <li>예약관리</li>
+            </ul>
+        </div>
+    </nav>
+</div>

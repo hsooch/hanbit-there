@@ -1,0 +1,88 @@
+@import 'common';
+@import 'ht-tab';
+
+body {
+  background-color: #edeef2;
+}
+
+.ht-setting-container {
+  width: 790px;
+  margin: 20px auto;
+
+  .ht-tab-btns > li {
+    min-width: 150px;
+    text-align: center;
+  }
+
+  .ht-tab-contents {
+    background-color: #fff;
+
+    li {
+      padding: 50px 100px 200px 100px;
+    }
+  }
+}
+
+.ht-setting-title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ht-setting-avatar > div {
+  text-align: center;
+}
+
+.ht-setting-avatar-border {
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  padding: 4px;
+  margin: 15px 0px 5px 0px;
+  border-radius: 55px;
+  border: solid 1px #3eaa8c;
+}
+
+.ht-setting-avatar-img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: url(../img/avatar.jpg) 50% 50%;
+  background-size: cover;
+}
+
+#ht-setting-avatar-select {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ht-setting-email {
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-check > label {
+  display: block;
+}
+
+.ht-setting-btns {
+  padding-top: 20px;
+  text-align: right;
+
+  button {
+    min-width: 150px;
+    padding: 5px 0px;
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+  }
+}
+
+.ht-setting-cancle {
+  background-color: #999;
+}
+
+.ht-setting-save {
+  background-color: @main-color;
+}

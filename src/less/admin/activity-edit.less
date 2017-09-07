@@ -1,0 +1,110 @@
+@import 'common.less';
+
+.form-group.sm {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.form-group.sm:nth-child(odd) {
+  padding-left: 10px;
+}
+
+#hta-there-group-select {
+  width: 100%;
+}
+
+#hta-there-group-select > button {
+  width: 100%;
+}
+
+#hta-there-select {
+  width: 100%;
+}
+
+#hta-there-select > button {
+  width: 100%;
+}
+
+#hta-there-select .dropdown-menu {
+  max-height: 300px;
+  overflow: auto;
+}
+
+#hta-activity-photos {
+  display: none;
+}
+
+.hta-photos {
+  padding-top: 10px;
+
+  & > li {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    .hta-photo-remove {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      border: 1px solid #fff;
+      background-color: #ff4461;
+      color: #fff;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      line-height: 14px;
+      font-size: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
+
+.hta-activity-info tbody tr.selected {
+  background-color: #539fa3;
+  color: #fff;
+}
+
+.hta-activity-info-item-list {
+  display: none;
+}
+
+.form-group {
+  position: relative;
+}
+
+.hta-add-row {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  background-color: #539fa3;
+  line-height: 24px;
+  border: 0;
+  border-radius: 12px;
+}
+
+.table {
+  th {
+    white-space: nowrap;
+
+    &:first-child { // & 는 상위에 있는것을 의미함 (여기선 th)
+      width: 50px;
+    }
+
+    &:last-child {
+      width: 150px;
+    }
+  }
+
+  td input[type=text] {
+    width: 100%;
+  }
+}

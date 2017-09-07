@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HT Admin</title>
+</head>
+<body>
+{{> ../../template/admin/menu group-there="true" there-info="true"}}
+<div class="admin-contents">
+    <div class="hta-title">지역 정보 관리</div>
+    <div class="form-group sm">
+        <label for="hta-there-group-id">지역그룹ID</label>
+        <div id="hta-there-group-select" class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                <span class="dropdown-title">지역그룹ID</span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+            </ul>
+        </div>
+    </div>
+    <div class="form-group sm">
+        <label for="hta-there-id">지역ID</label>
+        <button class="hta-check-duplicate btn-warning btn-xs">중복확인</button>
+        <input type="text" class="form-control" id="hta-there-id" placeholder="지역ID">
+    </div>
+    <div class="form-group sm">
+        <label for="hta-there-name">지역명</label>
+        <input type="text" class="form-control" id="hta-there-name" placeholder="지역명">
+    </div>
+    <div class="form-group sm">
+        <label for="hta-there-name-en">영문지역명</label>
+        <input type="text" class="form-control" id="hta-there-name-en" placeholder="영문지역명">
+    </div>
+    <div class="form-group sm">
+        <label for="hta-there-background">배경이미지</label>
+        <input type="file" id="hta-there-background" accept="image/*">
+        <button for="hta-there-background" class="hta-file-select btn btn-default">파일선택</button>
+    </div>
+    <div class="form-group sm">
+        <label for="hta-there-timezone">시간대</label>
+        <input type="text" class="form-control" id="hta-there-timezone" placeholder="시간대">
+    </div>
+    <div id="hta-there-background-preview"></div>
+    <div class="form-group">
+        <label for="hta-there-summary">요약설명</label>
+        <textarea class="form-control" id="hta-there-summary" placeholder="요약설명"></textarea>
+    </div>
+    <!-- 탭 메뉴 -->
+    <div class="hta-tab">
+        <ul class="hta-tab-header">
+            <li tab-id="info" class="active">
+                정보
+                <button class="hta-add-row">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </li>
+            <li tab-id="traffic">
+                교통편
+                <button class="hta-add-row">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </li>
+            <li tab-id="location">위치</li>
+        </ul>
+        <ul class="hta-tab-contents">
+            <li tab-id="info" class="active">
+                <table class="table hta-area-info">
+                    <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>제목</th>
+                        <th>내용</th>
+                        <th>편집</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- there-info template -->
+                    </tbody>
+                </table>
+            </li>
+            <li tab-id="traffic">
+                <table class="table hta-traffics">
+                    <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>아이콘</th>
+                        <th>제목</th>
+                        <th>내용</th>
+                        <th>편집</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- there-traffic template -->
+                    </tbody>
+                </table>
+            </li>
+            <li tab-id="location">
+                <div class="form-group">
+                    <label for="hta-there-lat">위도</label>
+                    <input type="text" class="form-control" id="hta-there-lat" placeholder="위도">
+                </div>
+                <div class="form-group">
+                    <label for="hta-there-lng">경도</label>
+                    <input type="text" class="form-control" id="hta-there-lng" placeholder="경도">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="hta-buttons">
+        <button class="hta-save btn btn-success">저장</button>
+        <button class="hta-delete btn btn-danger">삭제</button>
+        <button class="hta-cancel btn btn-default">취소</button>
+    </div>
+</div>
+</body>
+</html>

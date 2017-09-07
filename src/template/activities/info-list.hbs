@@ -1,0 +1,22 @@
+<div class="ht-activity-info-list">
+    <div class="ht-activity-info-title">
+        {{~title~}}
+    </div>
+    <ul class="type-{{type}}">
+        {{~#each items~}}
+            <li>
+                {{~#if icon~}}
+                    <i class="fa fw fa-{{icon}}"></i>
+                {{~/if~}}
+                {{~#if title~}}
+                    <div class="ht-activity-info-list-title">
+                        {{~title~}}
+                    </div>
+                {{~/if~}}
+                <div class="ht-activity-info-list-text">
+                    {{~text~}}
+                </div>
+            </li>
+        {{~/each~}}
+    </ul>
+</div>

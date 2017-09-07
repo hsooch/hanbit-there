@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{> template/title }}</title>
+</head>
+<body>
+{{> template/header search="true" }}
+<section class="ht-section-there">
+    <div class="dark-layer">
+        <div class="ht-there-name"></div>
+        <div class="ht-there-summary"></div>
+    </div>
+</section>
+<section class="ht-section-info">
+    <div class="ht-section-contents">
+        <div class="ht-tab">
+            <ul class="ht-tab-btns">
+                <li class="active">Info</li>
+                <li>Traffic</li>
+                <li>Map</li>
+            </ul>
+            <ul class="ht-tab-contents">
+                <li class="active ht-tab-area-info">
+                    <ul class="ht-area-info">
+
+                    </ul>
+                    <div class="ht-area-weather">
+                        <div class="ht-weather-title">
+                            Current Forecast
+                        </div>
+                        <div class="ht-weather-datetime">
+                            <!-- area-timedate.hbs -->
+                        </div>
+                        <div class="ht-weather-forecast">
+                            <!-- area-forecast.hbs -->
+                        </div>
+                    </div>
+                </li>
+                <li class="ht-tab-area-traffic">
+                    <ul class="ht-traffic-list">
+                        <!-- area-traffic.hbs -->
+                    </ul>
+                </li>
+                <li class="ht-tab-area-map">
+                    <div id="ht-area-map"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="ht-section-activities">
+    <div class="ht-section-contents">
+        <div class="ht-activities-title">
+            Things to do in
+            <span class="ht-area-name"></span>
+        </div>
+        <ul class="ht-activities-list">
+           <!-- ht-activity.hbs -->
+        </ul>
+    </div>
+</section>
+{{> template/footer }}
+</body>
+</html>

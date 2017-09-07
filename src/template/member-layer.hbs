@@ -1,0 +1,104 @@
+<div class="ht-member-layer">
+    <div class="ht-member-info">
+        {{#if signedIn}}
+            <div class="ht-signed-in">
+                <div class="ht-member-icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="ht-member-email">
+                    {{email}}
+                </div>
+            </div>
+        {{else}}
+            <div class="ht-sign-in">
+                <div class="ht-member-form">
+                    <div class="ht-member-logo">
+                        <div>HT</div>
+                    </div>
+                    <div class="ht-member-form-group">
+                        <input id="ht-sign-in-email" type="email" placeholder="이메일주소">
+                        <i class="fa fa-fw fa-envelope-o"></i>
+                    </div>
+                    <div class="ht-member-form-group">
+                        <input id="ht-sign-in-password" type="password" placeholder="비밀번호">
+                        <i class="fa fa-fw fa-lock"></i>
+                    </div>
+                    <div class="ht-member-form-group checkbox">
+                        <label>
+                            <input id="ht-sign-in-remember" type="checkbox">
+                            자동로그인
+                        </label>
+                        <div class="ht-link">
+                            비밀번호를 잊어버리셨나요?
+                        </div>
+                    </div>
+                    <div class="ht-member-form-group">
+                        <button id="ht-sign-in" class="ht-member-btn">로그인</button>
+                    </div>
+                    <div class="ht-member-text-sm">
+                        or
+                    </div>
+                    <ul class="ht-member-sns">
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-google-plus"></i></li>
+                    </ul>
+                </div>
+                <div class="ht-member-text">
+                    <span class="ht-highlight">THERE</span>만의 다양한 혜택을 받으시려면?
+                    <span class="ht-member-toggle ht-link">무료회원가입</span>
+                </div>
+            </div>
+            <div class="ht-sign-up">
+                <div class="ht-member-form">
+                    <div class="ht-member-logo">
+                        <div>HT</div>
+                    </div>
+                    <div class="ht-member-form-group">
+                        <input id="ht-sign-up-email" type="email" placeholder="이메일주소">
+                        <i class="fa fa-fw fa-envelope-o"></i>
+                    </div>
+                    <div class="ht-member-form-group">
+                        <input id="ht-sign-up-password" type="password" placeholder="비밀번호">
+                        <i class="fa fa-fw fa-lock"></i>
+                    </div>
+                    <div class="ht-member-form-group checkbox">
+                        <label>
+                            <input id="ht-sign-up-agree" type="checkbox" checked>
+                            약관동의
+                        </label>
+                        <div class="ht-link">
+                            약관보기
+                        </div>
+                    </div>
+                    <div class="ht-member-form-group">
+                        <button id="ht-sign-up" class="ht-member-btn">가입</button>
+                    </div>
+                    <div class="ht-member-text-sm">
+                        or
+                    </div>
+                    <ul class="ht-member-sns">
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-google-plus"></i></li>
+                    </ul>
+                </div>
+                <div class="ht-member-text">
+                    이미 <span class="ht-highlight">THERE</span>의 회원이신가요?
+                    <span class="ht-member-toggle ht-link">로그인</span>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+    <div class="ht-right-menu">
+        <ul class="ht-right-menu-list">
+            {{#if signedIn}}
+                <li id="ht-setting">My page</li>
+            {{/if}}
+                <li>THEREZINE</li>
+                <li>FAQ</li>
+                <li>항공권구매</li>
+            {{#if signedIn}}
+                <li id="ht-sign-out">Log Out</li>
+            {{/if}}
+        </ul>
+    </div>
+</div>

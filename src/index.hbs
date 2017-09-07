@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{> template/title }}</title><!-- 템플릿은 굳이 html 이 아니어도 됨 -->
+</head>
+<body>
+{{> template/header}}
+<section class="ht-section-main">
+    <div class="dark-layer">
+        <div class="ht-main-text">
+            그곳에서 꼭 해야 할 한가지 Activity
+        </div>
+        <div class="ht-sub-text">
+            여행지별 놓쳐서는 안될 액티비티를 확인해보세요.
+        </div>
+        <div class="ht-search-box">
+            <input class="ht-search-main" type="text"
+                   placeholder="가고 싶은 여행지, 투어, 액티비티를 검색해보세요.">
+            <i class="ht-search-icon fa fa-search"></i>
+        </div>
+        <ul class="ht-download-app">
+            <li>
+                <img class="play-logo" src="./img/google-icon.png">
+                <span>Google Play</span>
+            </li>
+            <li>
+                <i class="fa fa-apple"></i>
+                <span>Apple Store</span>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="ht-section-character">
+    <ul class="ht-characters">
+        <li>
+            <div class="ht-character-no">1</div>
+            <img class="ht-character" src="./img/ic-step1.png">
+            <div class="ht-character">여행지를 선택,<br>
+                모든 액티비티를 한번에 확인
+            </div>
+        </li>
+        <li>
+            <div class="ht-character-no">2</div>
+            <img class="ht-character" src="./img/ic-step2.png">
+            <div class="ht-character">각 여행지, 액티비티의 정보,<br>
+                사진, 후기를 한눈에 보기
+            </div>
+        </li>
+        <li>
+            <div class="ht-character-no">3</div>
+            <img class="ht-character" src="./img/ic-step3.png">
+            <div class="ht-character">빠르고 간편하게<br>
+                예약 및 결재 완료
+            </div>
+        </li>
+    </ul>
+</section>
+<section>
+    <div class="ht-section-title">
+        지금 뜨는 <span class="ht-highlight">핫</span> Tours & Activities
+    </div>
+    <div class="ht-section-contents">
+        <ul class="ht-hot-area">
+            <li style="background-image: url(./img/bali.jpg)">
+                <div class="dark-layer">
+                    진정한 힐링을 <br>
+                    원하신다면 <br>
+                    <strong>발리</strong>
+                </div>
+            </li>
+            <li style="background-image: url(./img/saipan.jpg)">
+                <div class="dark-layer">
+                    미국 가고 싶지만 <br>
+                    예산이 부족하다면 <br>
+                    <strong>사이판</strong>
+                </div>
+            </li>
+            <li style="background-image: url(./img/singapore.jpg)">
+                <div class="dark-layer">
+                    엄마랑 가기좋은 <br>
+                    깨끗한 <strong>싱가폴</strong>
+                </div>
+            </li>
+        </ul>
+        <ul class="ht-hot-activity ht-section-items">
+
+        </ul>
+    </div>
+</section>
+<section>
+    <div class="ht-section-title">
+        요즘 많이 찾는 인기 여행지 Best
+    </div>
+    <div class="ht-section-contents">
+        <ul class="ht-best-activity ht-section-items">
+        </ul>
+    </div>
+</section>
+<section class="ht-section-travel">
+    <div class="ht-section-title">
+        감성을 자극하는 여행자들의 이야기
+    </div>
+    <div class="ht-section-contents">
+        <div class="ht-view-all">
+            View all
+        </div>
+        <ul class="ht-travel ht-section-items">
+            <li style="background-image: url(./img/sentosa.JPG)">
+                <div class="dark-layer">
+                    <div class="ht-travel-header">THERE's Travle</div>
+                    <div class="ht-travel-title">센토사 즐기센!</div>
+                    <div class="ht-travel-sub-title">싱가폴에서 가장 아름다운 섬</div>
+                    <div class="ht-traver-editor">
+                        Edited by Hanbit <br>
+                        from THERE
+                    </div>
+                </div>
+            </li>
+            <li style="background-image: url(./img/singapore-food.png)">
+                <div class="dark-layer">
+                    <div class="ht-travel-header">THERE's Travle</div>
+                    <div class="ht-travel-title">싱가폴 먹킷로드</div>
+                    <div class="ht-travel-sub-title">인생 먹거리를 찾아 떠나는 싱가폴~</div>
+                    <div class="ht-traver-editor">
+                        Edited by Hanbit <br>
+                        from THERE
+                    </div>
+                </div>
+            </li>
+            <li style="background-image: url(./img/singapore-liver.png)">
+                <div class="dark-layer">
+                    <div class="ht-travel-header">THERE's Travle</div>
+                    <div class="ht-travel-title">파노라마 싱가폴 '리버크루즈'</div>
+                    <div class="ht-travel-sub-title">싱가폴에서 꼭 해야할 한가지!</div>
+                    <div class="ht-traver-editor">
+                        Edited by Hanbit <br>
+                        from THERE
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="ht-section-review">
+    <div class="ht-section-title">
+        놓치면 후회 할 리얼 후기 Review
+    </div>
+    <div class="ht-section-contents">
+        <div class="ht-view-all">
+            View all
+        </div>
+        <ul class="ht-review ht-section-items">
+            <li style="background-image: url(./img/writing.png)">
+                <div class="dark-layer">
+                    <div class="ht-review-title">
+                        Traveler's Review
+                    </div>
+                    <div class="ht-review-sub-title">
+                        리뷰를 찾아 여기저기 돌아다니는 것은 그만! <br>
+                        이제 THERE, 한곳에서 확인하세요.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dark-layer">
+                    <div class="ht-review-img"
+                         style="background-image: url(./img/sentosaisland.jpg)">
+                        <div class="dark-layer"></div>
+                    </div>
+                    <div class="ht-review-title">
+                        싱가폴 자유여행은 센토사 섬에서!
+                    </div>
+                    <div class="ht-review-sub-title">
+                        싱가폴에서 하루는 센토사 섬 <br>
+                        유니버셜 스튜디오에서
+                    </div>
+                    <div class="ht-review-editor">
+                        by 한빛(hanbit)
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dark-layer">
+                    <div class="ht-review-img"
+                         style="background-image: url(./img/atoz.jpg)">
+                        <div class="dark-layer"></div>
+                    </div>
+                    <div class="ht-review-title">
+                        싱가폴 여행 A to Z
+                    </div>
+                    <div class="ht-review-sub-title">
+                        싱가폴 여행 갈때 꼭 알고 가야 할 것들
+                    </div>
+                    <div class="ht-review-editor">
+                        by 한빛(hanbit)
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+{{> template/footer}}
+</body>
+</html>

@@ -1,0 +1,12 @@
+{{~#each this~}}
+    {{~#unless hidden~}}
+        <li activity-id="{{id}}">
+            <div class="hta-activity-img"
+                 style="background-image: url({{photos.[0]}})"></div>
+            <div class="hta-activity-text">
+                <div class="hta-activity-title">{{name}}({{id}})</div>
+                <div class="hta-activity-intro">{{intro}}</div>
+            </div>
+        </li>
+    {{~/unless~}}
+{{~/each~}}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{> ../../template/admin/menu group-there="true" there-group="true"}}
+<div class="admin-contents">
+    <div class="hta-title">지역 그룹 관리</div>
+    <div class="form-group">
+        <label for="hta-there-group-id">지역그룹ID</label>
+        <button class="hta-check-duplicate btn-warning btn-xs">중복확인</button>
+        <input type="text" class="form-control" id="hta-there-group-id" placeholder="지역그룹ID">
+    </div>
+    <div class="form-group">
+        <label for="hta-there-group-name">지역그룹명</label>
+        <input type="text" class="form-control" id="hta-there-group-name" placeholder="지역그룹명">
+    </div>
+    <div class="hta-buttons">
+        <button class="hta-save btn btn-success">저장</button>
+        <button class="hta-delete btn btn-danger">삭제</button>
+        <button class="hta-cancel btn btn-default">취소</button>
+    </div>
+</div>
+</body>
+</html>

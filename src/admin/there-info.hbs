@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{> ../../template/admin/menu group-there="true" there-info="true"}}
+<div class="admin-contents">
+    <div class="hta-title">지역 정보 관리</div>
+    <div class="hta-there-form">
+        <div id="hta-there-group-select" class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                <span class="dropdown-title">지역그룹</span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <!-- there-group-items.hbs -->
+            </ul>
+        </div>
+        <div id="hta-there-search" class="input-group">
+        <span class="input-group-addon" id="basic-addon1">
+            <i class="fa fa-search fa-flip-horizontal"></i>
+        </span>
+            <input type="text" id="hta-there-search-input" class="form-control" placeholder="지역명 또는 지역ID" aria-describedby="basic-addon1">
+        </div>
+        <button class="hta-add-there btn btn-primary">지역추가</button>
+    </div>
+    <ul class="hta-there-list">
+        <!-- admin/theres.hbs -->
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HT Admin</title>
+</head>
+<body>
+{{> ../../template/admin/menu group-activity="true" activity="true"}}
+<div class="admin-contents">
+    <div class="hta-title">액티비티 관리</div>
+    <div class="hta-activity-search-form">
+        <div id="hta-there-group-select" class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="dropdown-title">지역그룹</span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+            </ul>
+        </div>
+        <div id="hta-there-select" class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="dropdown-title">지역</span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+            </ul>
+        </div>
+        <div id="hta-activity-search" class="input-group">
+            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search fa-flip-horizontal"></i></span>
+            <input type="text" id="hta-activity-search-input" class="form-control" placeholder="액티비티명 또는 액티비티ID" aria-describedby="basic-addon1">
+        </div>
+        <button class="hta-add-activity btn btn-primary">액티비티추가</button>
+    </div>
+    <ul class="hta-activity-list">
+    </ul>
+</div>
+</body>
+</html>

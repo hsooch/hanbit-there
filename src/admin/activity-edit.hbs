@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HT Admin</title>
+</head>
+<body>
+{{> ../../template/admin/menu group-activity="true" activity="true"}}
+<div class="admin-contents">
+    <div class="hta-title">액티비티 관리</div>
+    <div class="form-group sm">
+        <label for="hta-there-group-id">지역그룹ID</label>
+        <div id="hta-there-group-select" class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                <span class="dropdown-title">지역그룹</span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+            </ul>
+        </div>
+    </div>
+    <div class="form-group sm">
+        <label for="hta-there-id">지역ID</label>
+        <div id="hta-there-select" class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                <span class="dropdown-title">지역</span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+            </ul>
+        </div>
+    </div>
+    <div class="form-group sm">
+        <label for="hta-activity-id">액티비티ID</label>
+        <button class="hta-check-duplicate btn-warning btn-xs">중복확인</button>
+        <input type="text" class="form-control" id="hta-activity-id" placeholder="액티비티ID">
+    </div>
+    <div class="form-group sm">
+        <label for="hta-activity-name">액티비티명</label>
+        <input type="text" class="form-control" id="hta-activity-name" placeholder="액티비티명">
+    </div>
+    <div class="form-group sm">
+        <label for="hta-activity-photos">사진</label>
+        <input type="file" id="hta-activity-photos" accept="image/*" multiple>
+        <button for="hta-activity-photos" class="hta-file-select btn btn-default">파일추가</button>
+        <ul class="hta-photos"></ul>
+    </div>
+    <div class="form-group sm">
+        <label for="hta-activity-video">비디오</label>
+        <input type="text" class="form-control" id="hta-activity-video" placeholder="비디오 TAG">
+    </div>
+    <div class="form-group sm">
+        <label for="hta-activity-lat">위도</label>
+        <input type="text" class="form-control" id="hta-activity-lat" placeholder="위도">
+    </div>
+    <div class="form-group sm">
+        <label for="hta-activity-lng">경도</label>
+        <input type="text" class="form-control" id="hta-activity-lng" placeholder="경도">
+    </div>
+    <div class="form-group">
+        <label for="hta-activity-intro">소개</label>
+        <textarea class="form-control" id="hta-activity-intro" placeholder="소개"></textarea>
+    </div>
+    <div class="form-group hta-activity-info-list">
+        <label>정보목록</label>
+        <button class="hta-add-row">
+            <i class="fa fa-plus"></i>
+        </button>
+        <table class="table hta-activity-info">
+            <thead>
+            <tr>
+                <th>No</th>
+                <th>제목</th>
+                <th>타입</th>
+                <th>아이템수</th>
+                <th>편집</th>
+            </tr>
+            </thead>
+            <tbody>
+                <!-- activity-info.hbs template -->
+            </tbody>
+        </table>
+    </div>
+    <div class="form-group hta-activity-info-item-list">
+        <label>정보아이템목록</label>
+        <button class="hta-add-row">
+            <i class="fa fa-plus"></i>
+        </button>
+        <table class="table hta-activity-info-item">
+            <thead>
+            <tr>
+                <th>No</th>
+                <th>제목</th>
+                <th>아이콘</th>
+                <th>내용</th>
+                <th>편집</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="hta-buttons">
+        <button class="hta-save btn btn-success">저장</button>
+        <button class="hta-delete btn btn-danger">삭제</button>
+        <button class="hta-cancel btn btn-default">취소</button>
+    </div>
+</div>
+</body>
+</html>

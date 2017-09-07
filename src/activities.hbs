@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{> template/title }}</title>
+</head>
+<body>
+{{> template/header search="true"}}
+<section class="ht-section-activity">
+    <div class="dark-layer">
+        <div class="ht-activity-name"></div>
+        <div class="ht-activity-in"></div>
+    </div>
+</section>
+<section class="ht-section-info">
+    <div class="ht-section-contents">
+        <div class="ht-activity-info">
+            <div class="ht-activity-info-tab ht-tab">
+                <ul class="ht-tab-btns">
+                    <li class="active">Photo</li>
+                    <li>Video</li>
+                    <li tab-id="map">Map</li>
+                </ul>
+                <ul class="ht-tab-contents">
+                    <li class="active">
+                        <div class="ht-activity-photos ht-carousel">
+                            <ul class="ht-carousel-visible">
+                                <li></li>
+                            </ul>
+                            <div class="ht-carousel-arrow left">
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                            <div class="ht-carousel-arrow right">
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ht-activity-video">
+                        <div class="ht-activity-video-ready">
+                            준비중입니다.
+                        </div>
+                    </li>
+                    <li>
+                        <div id="ht-activity-map"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="ht-activity-info-text">
+                <div class="ht-activity-intro">
+                    <div class="ht-activity-info-title">
+                        소개
+                    </div>
+                    <div class="ht-activity-intro-text">
+                    </div>
+                </div>
+                <!-- template activities/info-list.hbs -->
+            </div>
+            <div class="ht-activity-review-tab ht-tab">
+                <ul class="ht-tab-btns">
+                    <li class="active">이용후기 2</li>
+                    <li tab-id="reply">댓글 3</li>
+                </ul>
+                <ul class="ht-tab-contents">
+                    <li class="active">1234</li>
+                    <li>123455</li>
+                </ul>
+            </div>
+        </div>
+        <div class="ht-activity-booking">
+            <div class="ht-booking-header">
+                Booking
+            </div>
+            <div class="ht-booking-body">
+                <div class="ht-booking-calendar">
+                    <div class="ht-booking-calendar-title">
+                        이용 예정일
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <div class="ht-booking-calendar-datepicker">
+                        <div id="ht-datepicker"></div>
+                    </div>
+                </div>
+                <div class="ht-booking-options">
+                    <div class="ht-booking-datepick-msg">
+                        - 먼저 이용예정일을 선택하십시오.
+                    </div>
+                    <div class="ht-booking-options-box">
+                        <div id="ht-booking-option-1" class="ht-option-control">
+                            <label>이용옵션</label>
+                            <div class="ht-option-selectbox">
+                                <span>옵션선택(필수)</span>
+                                <i class="ht-option-caret fa fa-angle-down"></i>
+                            </div>
+                            <ul class="ht-options">
+                                <li>Tour A</li>
+                                <li>Tour B</li>
+                                <li>Premium</li>
+                            </ul>
+                        </div>
+                        <div class="ht-price-control" model-id="adult">
+                            <label>이용인원</label>
+                            <div class="ht-price-box disabled">
+                                성인
+                                <span class="ht-price-count">1</span>명
+                                <span class="ht-price">￦0</span>
+                                <ul class="ht-price-btns">
+                                    <li class="ht-price-btn ht-price-count-minus"><i class="fa fa-minus"></i></li>
+                                    <li class="ht-price-btn ht-price-count-plus"><i class="fa fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ht-price-control" model-id="kid">
+                            <div class="ht-price-box disabled">
+                                아동
+                                <span class="ht-price-count">0</span>명
+                                <span class="ht-price">￦0</span>
+                                <ul class="ht-price-btns">
+                                    <li class="ht-price-btn ht-price-count-minus"><i class="fa fa-minus"></i></li>
+                                    <li class="ht-price-btn ht-price-count-plus"><i class="fa fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ht-price-control" model-id="baby">
+                            <div class="ht-price-box disabled">
+                                유아
+                                <span class="ht-price-count">0</span>명
+                                <span class="ht-price">￦0</span>
+                                <ul class="ht-price-btns">
+                                    <li class="ht-price-btn ht-price-count-minus"><i class="fa fa-minus"></i></li>
+                                    <li class="ht-price-btn ht-price-count-plus"><i class="fa fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ht-booking-price">
+                        <div class="ht-booking-price-title">
+                            결제금액
+                        </div>
+                        <div class="ht-booking-price-total">
+                            총 금액
+                            <div class="total">
+                                ￦0
+                            </div>
+                        </div>
+                        <div class="ht-booking-price-point">
+                            적립 예정 포인트<br>
+                            <span>(이벤트 상품의 경우는 제외됩니다.)</span>
+                            <div class="point">
+                                0<span>P</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ht-booking-price">
+
+                </div>
+            </div>
+            <div class="ht-booking-footer">
+                <div class="ht-booking-carrier ht-booking-btn">캐리어에 담기</div>
+                <div class="ht-booking-now ht-booking-btn">바로 구매하기</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ht-section-activities">
+    <div class="ht-section-contents">
+        <div class="ht-activities-title">
+            Nearby Things to do
+            <span class="ht-area-name"></span>
+        </div>
+        <ul class="ht-activities-list">
+        </ul>
+    </div>
+</section>
+{{> template/footer }}
+</body>
+</html>

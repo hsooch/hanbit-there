@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{> template/title }}</title>
+</head>
+<body>
+{{> template/header search="true"}}
+<div class="ht-setting-container">
+    <div>
+        <ul class="ht-tab-btns">
+            <li class="active">계정설정</li>
+        </ul>
+        <ul class="ht-tab-contents">
+            <li class="active">
+                <div class="ht-setting-title">
+                    사용자 정보 변경
+                </div>
+                <div class="ht-setting-avatar">
+                    <div class="ht-setting-avatar-picture">
+                        <div class="ht-setting-avatar-border">
+                            <div class="ht-setting-avatar-img"></div>
+                        </div>
+                    </div>
+                    <div class="ht-setting-avatar-btn">
+                        <i id="ht-setting-avatar-select" class="fa fa-camera"></i>
+                    </div>
+                </div>
+                <div class="ht-setting-email">
+                    email@email.com
+                </div>
+                <div class="form-group">
+                    <label for="ht-member-name-input">이름</label>
+                    <input type="text" class="form-control" id="ht-member-name-input">
+                </div>
+                <div class="form-group">
+                    <label for="ht-member-phone-input">전화번호</label>
+                    <input type="text" class="form-control" id="ht-member-phone-input" placeholder="010-1234-5678">
+                </div>
+                <div class="form-group">
+                    <label for="ht-member-cpw-input">현재 비밀번호</label>
+                    <input type="password" class="form-control" id="ht-member-cpw-input">
+                </div>
+                <div class="form-group">
+                    <label for="ht-member-npw-input">새 비밀번호</label>
+                    <input type="password" class="form-control" id="ht-member-npw-input">
+                </div>
+                <div class="form-group">
+                    <label for="ht-member-npwc-input">새 비밀번호 확인</label>
+                    <input type="password" class="form-control" id="ht-member-npwc-input">
+                </div>
+                <div class="form-check">
+                    <label>이메일 수신</label>
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" id="ht-member-info-check">
+                        추천여행, 나만의 여행 등 나에게 최적화된 여행정보를 받아 보겠습니다.
+                    </label>
+                </div>
+                <div class="ht-setting-btns">
+                    <button class="ht-setting-cancle btn">취소</button>
+                    <button class="ht-setting-save btn">저장</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+{{> template/footer }}
+</body>
+</html>
