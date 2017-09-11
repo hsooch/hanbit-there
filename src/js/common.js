@@ -126,6 +126,7 @@ function signIn() {
         success: function (result) {
             alert(result.email + ' 님 반갑습니다.');
             closeMemberLayer();
+            location.reload();
         }
     });
 }
@@ -172,6 +173,7 @@ function signOut() {
         success: function () {
             alert('로그아웃 했음');
             closeMemberLayer();
+            location.href = '/';
         }
     });
 }
