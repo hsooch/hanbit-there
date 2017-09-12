@@ -234,6 +234,7 @@ function closeMemberLayer(callback) {
             $('.overlay-layer').remove();
             $('body').css('overflow', 'auto');
 
+            // 에러방지차 함수인지 꼭 확인 해야함
             if (typeof callback === 'function') {
                 callback();
             }
