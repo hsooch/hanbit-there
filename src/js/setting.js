@@ -63,6 +63,10 @@ function init(member) {
     });
 }
 
+$('.ht-setting-cancle').on('click', function () {
+    history.back();
+});
+
 $('.ht-setting-save').on('click', function () {
     var member = {
         currentPw: $('#ht-member-cpw-input').val().trim(),

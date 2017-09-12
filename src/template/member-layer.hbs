@@ -2,9 +2,13 @@
     <div class="ht-member-info">
         {{#if signedIn}}
             <div class="ht-signed-in">
-                <div class="ht-member-icon">
-                    <i class="fa fa-user"></i>
-                </div>
+                {{#if avatar}}
+                    <div class="ht-member-icon" style="background-image: url({{avatar}})"></div>
+                {{else}}
+                    <div class="ht-member-icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                {{/if}}
                 <div class="ht-member-email">
                     {{email}}
                 </div>

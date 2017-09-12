@@ -171,9 +171,10 @@ function signOut() {
     ajax({
         url: '/api/member/signout',
         success: function () {
-            alert('로그아웃 했음');
-            closeMemberLayer();
-            location.href = '/';
+            closeMemberLayer(function () {
+                // 콜백함수
+                location.href = '/';
+            });
         }
     });
 }
@@ -223,7 +224,7 @@ function openMemberLayer(memberInfo) {
     });
 }
 
-function closeMemberLayer() {
+function closeMemberLayer(callback) {
     $('.ht-member-layer').animate({
         right: '-333px'
     }, {
@@ -232,6 +233,10 @@ function closeMemberLayer() {
             $('.ht-member-layer').remove();
             $('.overlay-layer').remove();
             $('body').css('overflow', 'auto');
+
+            if (typeof callback === 'function') {
+                callback();
+            }
         }
     });
 }
